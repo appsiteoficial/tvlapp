@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+		<title>Aplicativo TVL</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBarlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBarlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CUrbanist%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBarlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para Aplicativo TVL &raquo;" href="https://tvl.app.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Aplicativo TVL &raquo;" href="https://tvl.app.br/comments/feed/" />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://tvl.app.br/wp-includes/css/dist/block-library/style.min.css?ver=6.4.4' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://tvl.app.br/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://tvl.app.br/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.17.3' media='all' />
+<style id='elementor-frontend-inline-css'>
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
+</style>
+<link rel='stylesheet' id='elementor-post-6-css' href='https://tvl.app.br/wp-content/uploads/elementor/css/post-6.css?ver=1699725306' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.23.0' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://tvl.app.br/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.17.1' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://tvl.app.br/wp-content/uploads/elementor/css/global.css?ver=1699726709' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css' href='https://tvl.app.br/wp-content/uploads/elementor/css/post-9.css?ver=1712689404' media='all' />
+<link rel='stylesheet' id='happy-icons-css' href='https://tvl.app.br/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=3.10.1' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://tvl.app.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://tvl.app.br/wp-json/" /><link rel="alternate" type="application/json" href="https://tvl.app.br/wp-json/wp/v2/pages/9" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tvl.app.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.4" />
+<link rel="canonical" href="https://tvl.app.br/" />
+<link rel='shortlink' href='https://tvl.app.br/' />
+<link rel="alternate" type="application/json+oembed" href="https://tvl.app.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftvl.app.br%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tvl.app.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftvl.app.br%2F&#038;format=xml" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"frontpage","pagePostType2":"single-page","pagePostAuthor":"contatoandreleduc@gmail.com"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NB2X8Q9N');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Elementor 3.17.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kn9yqmiqb1");
+</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="home page-template page-template-elementor_canvas page page-id-9 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-9">
+	
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB2X8Q9N" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->		<div data-elementor-type="wp-page" data-elementor-id="9" class="elementor elementor-9" data-elementor-post-type="page">
+							<div class="elementor-element elementor-element-93748b4 e-con-full e-flex e-con e-parent" data-id="93748b4" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}" data-core-v316-plus="true">
+				<div class="elementor-element elementor-element-b02127f elementor-headline--style-rotate elementor-widget-mobile__width-inherit elementor-widget elementor-widget-animated-headline" data-id="b02127f" data-element_type="widget" data-settings="{&quot;headline_style&quot;:&quot;rotate&quot;,&quot;rotating_text&quot;:&quot;IPHONE\nANDROID\nTV SMART\nTV ANDROID\nOUTRAS TV BOXS\nFIRE STICK\nMI STICK&quot;,&quot;rotate_iteration_delay&quot;:500,&quot;animation_type&quot;:&quot;typing&quot;,&quot;loop&quot;:&quot;yes&quot;}" data-widget_type="animated-headline.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://tvl.app.br/wp-content/plugins/pro-elements/assets/css/widget-animated-headline.min.css">		<h3 class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters">
+					<span class="elementor-headline-plain-text elementor-headline-text-wrapper">APLICATIVO PARA</span>
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">
+				IPHONE			</span>
+					<span class="elementor-headline-dynamic-text">
+				ANDROID			</span>
+					<span class="elementor-headline-dynamic-text">
+				TV&nbsp;SMART			</span>
+					<span class="elementor-headline-dynamic-text">
+				TV&nbsp;ANDROID			</span>
+					<span class="elementor-headline-dynamic-text">
+				OUTRAS&nbsp;TV&nbsp;BOXS			</span>
+					<span class="elementor-headline-dynamic-text">
+				FIRE&nbsp;STICK			</span>
+					<span class="elementor-headline-dynamic-text">
+				MI&nbsp;STICK			</span>
+						</span>
+				</h3>
+				</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6261389 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6261389" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ff10279" data-id="ff10279" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c0be10b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="c0be10b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Desbloqueie um Universo de Entretenimento com o Aplicativo TVL
+
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-43beb8f elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="43beb8f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VOCÊ TERÁ ACESSO A <span style="color:#5bcb95ffff;background-color:#4D005D">TODOS OS
+CANAIS ABERTOS, FECHADOS E
+PACOTES DE PAY-PER-VIEW DE UMA
+TV POR ASSINATURA.</span> E TODOS
+OS SERVIÇOS DE STREAMING DO MERCADO
+<span style="color:#5bcb95ffff;background-color:#4D005D">NETFLIX, GLOBO PLAY, PRIME VIDEO, DISNEY + 
+E MUITO MAIS...</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9d98f80 elementor-widget elementor-widget-heading" data-id="9d98f80" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">SEM PAGAR ASSINATURAS E MENSALIDADES! </h2>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-057adb0" data-id="057adb0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-719bd1a elementor-arrows-position-outside elementor-widget__width-initial elementor-widget elementor-widget-image-carousel" data-id="719bd1a" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 3"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://tvl.app.br/wp-content/uploads/2023/11/tv-aplicativo-tvl-scaled.webp" alt="tv aplicativo tvl" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 3"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://tvl.app.br/wp-content/uploads/2023/11/android-deitado-scaled.webp" alt="android deitado" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 3"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://tvl.app.br/wp-content/uploads/2023/11/iphone-virado.webp" alt="iphone virado" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-79fe2e8 elementor-align-center elementor-widget elementor-widget-button" data-id="79fe2e8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#CHECKOUT">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fc7466c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc7466c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc9a8c7" data-id="cc9a8c7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ea54e3b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="ea54e3b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CONFIRA OS PRINCIPAIS BENEFÍCIOS DO APLICATIVO TVL</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0a0a505 elementor-widget elementor-widget-image" data-id="0a0a505" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img fetchpriority="high" decoding="async" width="800" height="341" src="https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193-1024x436.webp" class="attachment-large size-large wp-image-58" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193-1024x436.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193-300x128.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193-768x327.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193-1536x655.webp 1536w,   https://tvl.app.br/wp-content/uploads/2023/10/mobile02-2-1-1-1-e1696946439193.webp 1612w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-e1bdc40 elementor-align-center elementor-widget elementor-widget-button" data-id="e1bdc40" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#CHECKOUT">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cadcdc4 elementor-widget elementor-widget-image" data-id="cadcdc4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1000" height="150" src="https://tvl.app.br/wp-content/uploads/2023/10/compra-segura-vetor-1.png" class="attachment-full size-full wp-image-59" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/compra-segura-vetor-1.png 1000w,   https://tvl.app.br/wp-content/uploads/2023/10/compra-segura-vetor-1-300x45.png 300w,   https://tvl.app.br/wp-content/uploads/2023/10/compra-segura-vetor-1-768x115.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c7aa18c elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="c7aa18c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b7caad7" data-id="b7caad7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-f138690 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f138690" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-927c5fa" data-id="927c5fa" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b6d41ba elementor-widget elementor-widget-text-editor" data-id="b6d41ba" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>FILMES E SÉRIES EM 4K</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-dc70aff elementor-widget elementor-widget-text-editor" data-id="dc70aff" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O TVL conta com um catálogo completo que reúne mais de 27.000 mil filmes e séries dos principais serviços de streaming da atualidade, tudo em 4K.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-75f7be3" data-id="75f7be3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-be28f02 elementor-widget elementor-widget-image" data-id="be28f02" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="466" src="https://tvl.app.br/wp-content/uploads/2023/10/filmes-1-1-3-1-1024x597.webp" class="attachment-large size-large wp-image-72" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/filmes-1-1-3-1-1024x597.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/10/filmes-1-1-3-1-300x175.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/filmes-1-1-3-1-768x448.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/10/filmes-1-1-3-1.webp 1243w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f165561 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="f165561" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c6c6744" data-id="c6c6744" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-ea3d4bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea3d4bb" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c4130dd" data-id="c4130dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f86075a elementor-widget elementor-widget-image" data-id="f86075a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="467" src="https://tvl.app.br/wp-content/uploads/2023/10/futebol-1-1024x598.webp" class="attachment-large size-large wp-image-78" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/futebol-1-1024x598.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/10/futebol-1-300x175.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/futebol-1-768x448.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/10/futebol-1.webp 1482w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-422f76f" data-id="422f76f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-35159d1 elementor-widget elementor-widget-text-editor" data-id="35159d1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>É FUTEBOL QUE VOCÊ QUER? BRASILEIRÃO, CHAMPIONS, UFC E MAIS&#8230;</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-242beca elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="242beca" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Tenha acesso a todos os canais PREMIERE e pacotes de Pay-Per-View. Com o TVL você terá todos os canais esportivos, podendo assistir também, Basquete, Fórmula 1, UFC e muito mais…</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1fa68ec elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="1fa68ec" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-368ff80" data-id="368ff80" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-4024c0d elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4024c0d" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a836edb" data-id="a836edb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-431a5b5 elementor-widget elementor-widget-text-editor" data-id="431a5b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>CONTEÚDO ADULTO</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-4236ff5 elementor-widget elementor-widget-text-editor" data-id="4236ff5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>TVL também conta com esse acervo de canais em um só lugar. Filmes, canais e séries, tudo que há de mais quente neste universo. Além disso o acesso a este conteúdo pode ser protegido por senha.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f8d6e5f" data-id="f8d6e5f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4fb91de elementor-widget elementor-widget-image" data-id="4fb91de" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="466" src="https://tvl.app.br/wp-content/uploads/2023/10/super-box-tv-adulto-1024x597-1-1-1.webp" class="attachment-large size-large wp-image-89" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/super-box-tv-adulto-1024x597-1-1-1.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/10/super-box-tv-adulto-1024x597-1-1-1-300x175.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/super-box-tv-adulto-1024x597-1-1-1-768x448.webp 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+		<div class="elementor-element elementor-element-d4f148e e-flex e-con-boxed e-con e-parent" data-id="d4f148e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}" data-core-v316-plus="true">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4581b14 e-flex e-con-boxed e-con e-child" data-id="4581b14" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-617683a e-con-full e-flex e-con e-child" data-id="617683a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;full&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-568649d e-con-full e-flex e-con e-child" data-id="568649d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-9f96502 elementor-widget elementor-widget-text-editor" data-id="9f96502" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O APP TVL FUNCIONA EM</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-12f60bd elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="12f60bd" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://tvl.app.br/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">CELULARES ANDROID</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">IPHONES</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">TV ANDROID</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">TV SMART</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">COMPUTADORES</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">OUTRAS TVBOX</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">FIRE STICK E MI STICK</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-24e7dc3 e-con-full e-flex e-con e-child" data-id="24e7dc3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-a817db6 elementor-widget elementor-widget-image" data-id="a817db6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="534" src="https://tvl.app.br/wp-content/uploads/2023/11/give-me-that-remote-controller-1-1-1024x683.jpg" class="attachment-large size-large wp-image-266" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/give-me-that-remote-controller-1-1-1024x683.jpg 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/give-me-that-remote-controller-1-1-300x200.jpg 300w,   https://tvl.app.br/wp-content/uploads/2023/11/give-me-that-remote-controller-1-1-768x512.jpg 768w,   https://tvl.app.br/wp-content/uploads/2023/11/give-me-that-remote-controller-1-1.jpg 1500w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-30a7a6a elementor-align-center elementor-widget elementor-widget-button" data-id="30a7a6a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#CHECKOUT">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d6379ae e-con-full e-flex e-con e-parent" data-id="d6379ae" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}" data-core-v316-plus="true">
+				<div class="elementor-element elementor-element-93dc7b5 elementor-widget elementor-widget-n-carousel" data-id="93dc7b5" data-element_type="widget" data-settings="{&quot;carousel_items&quot;:[{&quot;slide_title&quot;:&quot;Slide #2&quot;,&quot;_id&quot;:&quot;c69a701&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;e549c40&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;2e87b11&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;9e629f1&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;83f1add&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;69394ce&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;ef68c3f&quot;}],&quot;slides_to_show&quot;:&quot;5&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:1500,&quot;slides_to_show_mobile&quot;:&quot;3&quot;,&quot;slides_to_show_tablet&quot;:&quot;2&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;offset_sides&quot;:&quot;none&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="nested-carousel.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://tvl.app.br/wp-content/plugins/pro-elements/assets/css/widget-nested-carousel.min.css">		<div class="e-n-carousel swiper" dir="ltr">
+			<div class="swiper-wrapper" aria-live="off">
+										<div class="swiper-slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="1 de 7">
+							<div class="elementor-element elementor-element-b329aad e-flex e-con-boxed e-con e-child" data-id="b329aad" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-fdb41b3 elementor-widget elementor-widget-image" data-id="fdb41b3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="450" src="https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1024x576.png" class="attachment-large size-large wp-image-208" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1024x576.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-300x169.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-768x432.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1536x864.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="2" role="group" aria-roledescription="slide" aria-label="2 de 7">
+							<div class="elementor-element elementor-element-fa72816 e-flex e-con-boxed e-con e-child" data-id="fa72816" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-698e5ad elementor-widget elementor-widget-image" data-id="698e5ad" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="246" src="https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1024x315.png" class="attachment-large size-large wp-image-209" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1024x315.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-300x92.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-768x236.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1536x472.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-2048x630.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="3" role="group" aria-roledescription="slide" aria-label="3 de 7">
+							<div class="elementor-element elementor-element-6e9799f e-flex e-con-boxed e-con e-child" data-id="6e9799f" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9996173 elementor-widget elementor-widget-image" data-id="9996173" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="510" src="https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1024x653.png" class="attachment-large size-large wp-image-210" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1024x653.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-300x191.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-768x490.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1536x980.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-2048x1306.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="4" role="group" aria-roledescription="slide" aria-label="4 de 7">
+							<div class="elementor-element elementor-element-0d7db3f e-flex e-con-boxed e-con e-child" data-id="0d7db3f" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9138260 elementor-widget elementor-widget-image" data-id="9138260" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="176" src="https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1024x225.png" class="attachment-large size-large wp-image-213" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1024x225.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-300x66.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-768x169.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1536x338.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-2048x450.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="5" role="group" aria-roledescription="slide" aria-label="5 de 7">
+							<div class="elementor-element elementor-element-2f3faf6 e-flex e-con-boxed e-con e-child" data-id="2f3faf6" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c1d706f elementor-widget elementor-widget-image" data-id="c1d706f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="128" src="https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-1024x164.webp" class="attachment-large size-large wp-image-212" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-1024x164.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-300x48.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-768x123.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png.webp 1200w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="6" role="group" aria-roledescription="slide" aria-label="6 de 7">
+							<div class="elementor-element elementor-element-44a6ed5 e-flex e-con-boxed e-con e-child" data-id="44a6ed5" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-00c5570 elementor-widget elementor-widget-image" data-id="00c5570" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="228" src="https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1024x292.webp" class="attachment-large size-large wp-image-214" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1024x292.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-300x86.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-768x219.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1536x438.webp 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-2048x584.webp 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="7" role="group" aria-roledescription="slide" aria-label="7 de 7">
+							<div class="elementor-element elementor-element-02f3248 e-flex e-con-boxed e-con e-child" data-id="02f3248" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c8e2f39 elementor-widget elementor-widget-image" data-id="c8e2f39" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="161" src="https://tvl.app.br/wp-content/uploads/2023/11/disc-1024x206.png" class="attachment-large size-large wp-image-220" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/disc-1024x206.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-300x60.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-768x155.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-1536x309.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-2048x412.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+								</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6d9e6d27 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6d9e6d27" data-element_type="section" id="#CHECKOUT" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-506bb053" data-id="506bb053" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-470ccabc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="470ccabc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-15072c01" data-id="15072c01" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-20006672 elementor-widget elementor-widget-heading" data-id="20006672" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">MENSAL</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-406d6549 elementor-widget elementor-widget-heading" data-id="406d6549" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">30 dias</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1de8e49e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1de8e49e" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-638b7a84 elementor-widget elementor-widget-image" data-id="638b7a84" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="550" height="575" src="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg" class="attachment-large size-large wp-image-421" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg 550w,   https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3-287x300.jpg 287w" sizes="(max-width: 550px) 100vw, 550px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-e31975e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="e31975e" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-692b1c41 elementor-widget elementor-widget-heading" data-id="692b1c41" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">R$ 37,90</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-49fca795 elementor-align-center elementor-widget elementor-widget-button" data-id="49fca795" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://ev.braip.com/ref?pl=plalx1lo&ck=chee5d7k&af=afidnjdl9l&src=YOUT.DE.OLHO.NA.FAMA">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5986b969 elementor-widget elementor-widget-image" data-id="5986b969" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="120" src="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png" class="attachment-large size-large wp-image-422" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png 1000w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-300x45.png 300w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-768x115.png 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-615eff22" data-id="615eff22" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4f96d766 elementor-widget elementor-widget-menu-anchor" data-id="4f96d766" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div id="CHECKOUT" class="elementor-menu-anchor"></div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4b76d452 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4b76d452" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7236916" data-id="7236916" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-604dc77b elementor-align-center elementor-widget elementor-widget-button" data-id="604dc77b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">CAMPEÃO DE VENDAS</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-514929ad elementor-widget elementor-widget-heading" data-id="514929ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VITÁLICIO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4557491 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="4557491" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3c86bab5 elementor-widget elementor-widget-image" data-id="3c86bab5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="550" height="575" src="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg" class="attachment-full size-full wp-image-421" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg 550w,   https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3-287x300.jpg 287w" sizes="(max-width: 550px) 100vw, 550px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-7f7a957c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7f7a957c" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f55fc1c elementor-widget elementor-widget-heading" data-id="5f55fc1c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">por 12x de</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6b14c09b elementor-widget elementor-widget-heading" data-id="6b14c09b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">R$ 20,78</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-24852c7a elementor-widget elementor-widget-heading" data-id="24852c7a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ou à vista R$ 207,00</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2b663a42 elementor-align-center elementor-widget elementor-widget-button" data-id="2b663a42" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://ev.braip.com/ref?pl=pla4kdgp&ck=chee5d7k&af=afidnjdl9l&src=YOUT.DE.OLHO.NA.FAMA">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1baa0aac elementor-widget elementor-widget-image" data-id="1baa0aac" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="120" src="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png" class="attachment-large size-large wp-image-422" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png 1000w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-300x45.png 300w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-768x115.png 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-41665699" data-id="41665699" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-3df5a7dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3df5a7dc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3ef0cac8" data-id="3ef0cac8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-61a30b6 elementor-widget elementor-widget-heading" data-id="61a30b6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">TRIMESTRAL</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7ca46aea elementor-widget elementor-widget-heading" data-id="7ca46aea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">90 dias</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-755e4c39 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="755e4c39" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-602373fa elementor-widget elementor-widget-image" data-id="602373fa" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="550" height="575" src="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg" class="attachment-large size-large wp-image-421" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3.jpg 550w,   https://tvl.app.br/wp-content/uploads/2024/04/Design-sem-nome-3-287x300.jpg 287w" sizes="(max-width: 550px) 100vw, 550px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-137a8757 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="137a8757" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3906795a elementor-widget elementor-widget-heading" data-id="3906795a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">R$77,90</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-41d5715a elementor-align-center elementor-widget elementor-widget-button" data-id="41d5715a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://ev.braip.com/ref?pl=plazdy4l&ck=chee5d7k&af=afidnjdl9l&src=YOUT.DE.OLHO.NA.FAMA">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">COMPRAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7e8bf0fc elementor-widget elementor-widget-image" data-id="7e8bf0fc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="120" src="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png" class="attachment-large size-large wp-image-422" alt="" srcset="https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1.png 1000w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-300x45.png 300w,   https://tvl.app.br/wp-content/uploads/2024/04/compra-segura-vetor-1-768x115.png 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+		<div class="elementor-element elementor-element-32cc414 e-con-full e-flex e-con e-parent" data-id="32cc414" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;_ha_eqh_enable&quot;:false}" data-core-v316-plus="true">
+				<div class="elementor-element elementor-element-21a48d6 elementor-widget elementor-widget-n-carousel" data-id="21a48d6" data-element_type="widget" data-settings="{&quot;carousel_items&quot;:[{&quot;slide_title&quot;:&quot;Slide #2&quot;,&quot;_id&quot;:&quot;c69a701&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;e549c40&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;2e87b11&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;9e629f1&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;83f1add&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;69394ce&quot;},{&quot;slide_title&quot;:&quot;Slide #3&quot;,&quot;_id&quot;:&quot;ef68c3f&quot;}],&quot;slides_to_show&quot;:&quot;5&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:1500,&quot;slides_to_show_mobile&quot;:&quot;3&quot;,&quot;slides_to_show_tablet&quot;:&quot;2&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;offset_sides&quot;:&quot;none&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="nested-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="e-n-carousel swiper" dir="ltr">
+			<div class="swiper-wrapper" aria-live="off">
+										<div class="swiper-slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="1 de 7">
+							<div class="elementor-element elementor-element-91154e9 e-flex e-con-boxed e-con e-child" data-id="91154e9" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8ebd486 elementor-widget elementor-widget-image" data-id="8ebd486" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="450" src="https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1024x576.png" class="attachment-large size-large wp-image-208" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1024x576.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-300x169.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-768x432.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-1536x864.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Netflix-Logo-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="2" role="group" aria-roledescription="slide" aria-label="2 de 7">
+							<div class="elementor-element elementor-element-c64807b e-flex e-con-boxed e-con e-child" data-id="c64807b" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8470c19 elementor-widget elementor-widget-image" data-id="8470c19" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="246" src="https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1024x315.png" class="attachment-large size-large wp-image-209" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1024x315.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-300x92.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-768x236.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-1536x472.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Amazon_Prime_Video_logo.svg-2048x630.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="3" role="group" aria-roledescription="slide" aria-label="3 de 7">
+							<div class="elementor-element elementor-element-7faf5e7 e-flex e-con-boxed e-con e-child" data-id="7faf5e7" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e5529e3 elementor-widget elementor-widget-image" data-id="e5529e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="510" src="https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1024x653.png" class="attachment-large size-large wp-image-210" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1024x653.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-300x191.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-768x490.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-1536x980.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Disney_Original_Logo.svg-2048x1306.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="4" role="group" aria-roledescription="slide" aria-label="4 de 7">
+							<div class="elementor-element elementor-element-6cdd9be e-flex e-con-boxed e-con e-child" data-id="6cdd9be" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-696a9bc elementor-widget elementor-widget-image" data-id="696a9bc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="176" src="https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1024x225.png" class="attachment-large size-large wp-image-213" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1024x225.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-300x66.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-768x169.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-1536x338.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Globoplay_logo_2020.svg-2048x450.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="5" role="group" aria-roledescription="slide" aria-label="5 de 7">
+							<div class="elementor-element elementor-element-557a26a e-flex e-con-boxed e-con e-child" data-id="557a26a" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0399467 elementor-widget elementor-widget-image" data-id="0399467" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="128" src="https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-1024x164.webp" class="attachment-large size-large wp-image-212" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-1024x164.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-300x48.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png-768x123.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Logo_Premiere_FC_2018.png.webp 1200w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="6" role="group" aria-roledescription="slide" aria-label="6 de 7">
+							<div class="elementor-element elementor-element-b87449d e-flex e-con-boxed e-con e-child" data-id="b87449d" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-f213e29 elementor-widget elementor-widget-image" data-id="f213e29" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="228" src="https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1024x292.webp" class="attachment-large size-large wp-image-214" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1024x292.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-300x86.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-768x219.webp 768w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-1536x438.webp 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/Star_logo.svg-2048x584.webp 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+											<div class="swiper-slide" data-slide="7" role="group" aria-roledescription="slide" aria-label="7 de 7">
+							<div class="elementor-element elementor-element-3c4fd0e e-flex e-con-boxed e-con e-child" data-id="3c4fd0e" data-element_type="container" data-settings="{&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9f1996a elementor-widget elementor-widget-image" data-id="9f1996a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="161" src="https://tvl.app.br/wp-content/uploads/2023/11/disc-1024x206.png" class="attachment-large size-large wp-image-220" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/11/disc-1024x206.png 1024w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-300x60.png 300w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-768x155.png 768w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-1536x309.png 1536w,   https://tvl.app.br/wp-content/uploads/2023/11/disc-2048x412.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+				</div>
+								</div>
+								</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a39e4c3 e-flex e-con-boxed e-con e-parent" data-id="a39e4c3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;container_type&quot;:&quot;flex&quot;,&quot;content_width&quot;:&quot;boxed&quot;,&quot;_ha_eqh_enable&quot;:false}" data-core-v316-plus="true">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-675a567 elementor-widget elementor-widget-image" data-id="675a567" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="800" src="https://tvl.app.br/wp-content/uploads/2023/10/selo-bloco-08-1024x1024-1-1.webp" class="attachment-large size-large wp-image-145" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/selo-bloco-08-1024x1024-1-1.webp 1024w,   https://tvl.app.br/wp-content/uploads/2023/10/selo-bloco-08-1024x1024-1-1-300x300.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/selo-bloco-08-1024x1024-1-1-150x150.webp 150w,   https://tvl.app.br/wp-content/uploads/2023/10/selo-bloco-08-1024x1024-1-1-768x768.webp 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-aadb858 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="aadb858" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O código de defesa do consumidor (Art. 49) garante 7 dias para solicitar reembolso em caso de insatisfação com o produto.</p>						</div>
+				</div>
+					</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4871c76 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4871c76" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2684b76" data-id="2684b76" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f87faf2 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f87faf2" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ff90f0 elementor-widget elementor-widget-heading" data-id="5ff90f0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Dúvidas Frequentes</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f60b7ca elementor-widget elementor-widget-accordion" data-id="f60b7ca" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.17.0 - 08-11-2023 */
+.elementor-accordion{text-align:left}.elementor-accordion .elementor-accordion-item{border:1px solid #d5d8dc}.elementor-accordion .elementor-accordion-item+.elementor-accordion-item{border-top:none}.elementor-accordion .elementor-tab-title{margin:0;padding:15px 20px;font-weight:700;line-height:1;cursor:pointer;outline:none}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{display:inline-block;width:1.5em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon svg{width:1em;height:1em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-right{float:right;text-align:right}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-left{float:left;text-align:left}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-closed{display:block}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-opened,.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-closed{display:none}.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-opened{display:block}.elementor-accordion .elementor-tab-content{display:none;padding:15px 20px;border-top:1px solid #d5d8dc}@media (max-width:767px){.elementor-accordion .elementor-tab-title{padding:12px 15px}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{width:1.2em}.elementor-accordion .elementor-tab-content{padding:7px 15px}}.e-con-inner>.elementor-widget-accordion,.e-con>.elementor-widget-accordion{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2571" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-2571" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">PRECISO PAGAR ASSINATURA?</a>
+					</div>
+					<div id="elementor-tab-content-2571" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2571"><p>NÃO! O pagamento é único.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2572" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-2572" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">COMO INSTALAR O APLICATIVO?</a>
+					</div>
+					<div id="elementor-tab-content-2572" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-2572"><p>O Processo é bem simples, depois do pagamento efetuado você será encaminhado para o nosso suporte e receberá o link para instalar.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2573" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-2573" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">COMO FUNCIONA A GARANTIA INCONDICIONAL?</a>
+					</div>
+					<div id="elementor-tab-content-2573" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-2573"><p>Após o primeiro acesso você terá 7 dias de garantia incondicional, ou seja se não gostar do que está usando faremos a devolução do seu dinheiro sem perguntas e removeremos o seu acesso.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2574" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-2574" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">FUNCIONA SOMENTE NO WI-FI?</a>
+					</div>
+					<div id="elementor-tab-content-2574" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-2574"><p>Ele funciona no Wifi e no Cabo de rede.</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b8e1884 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b8e1884" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a7ee2ac" data-id="a7ee2ac" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-823da53 elementor-widget elementor-widget-heading" data-id="823da53" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FALE CONOSCO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7bff08b elementor-align-center elementor-widget elementor-widget-button" data-id="7bff08b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://api.whatsapp.com/send?phone=5511910235632&#038;text=Ol%C3%A1!%20Eu%20venho%20da%20p%C3%A1gina%20de%20vendas%20do%20App%20da%20TVL,%20e%20gostaria%20de%20adquirir%20o%20meu,%20voc%C3%AA%20pode%20me%20ajudar?">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">CONTATO WHATSAPP</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3180339" data-id="3180339" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-28c5a8c elementor-widget elementor-widget-heading" data-id="28c5a8c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">SITE SEGURO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d364c99 elementor-widget elementor-widget-image" data-id="d364c99" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="137" src="https://tvl.app.br/wp-content/uploads/2023/10/site-seguro-selos-1-1.webp" class="attachment-large size-large wp-image-154" alt="" srcset="https://tvl.app.br/wp-content/uploads/2023/10/site-seguro-selos-1-1.webp 995w,   https://tvl.app.br/wp-content/uploads/2023/10/site-seguro-selos-1-1-300x51.webp 300w,   https://tvl.app.br/wp-content/uploads/2023/10/site-seguro-selos-1-1-768x131.webp 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6a824ae elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6a824ae" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-720ccfa" data-id="720ccfa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e78cc4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e78cc4" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-dec91b2" data-id="dec91b2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fe40be3 elementor-widget elementor-widget-text-editor" data-id="fe40be3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Copyright 2023 &#8211; Aplicativo TBL ® Todos os direitos reservados.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ee28dd9 elementor-widget elementor-widget-text-editor" data-id="ee28dd9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h6 style="text-align: center;"><span style="color: #ffcc00;">Termos de Uso I Políticas de Privacidade</span></h6>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1f912a1" data-id="1f912a1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-69c7153 elementor-widget elementor-widget-heading" data-id="69c7153" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PIRATARIA É CRIME</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0929faf elementor-widget elementor-widget-text-editor" data-id="0929faf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>A venda do APP TVL só pode ser realizada através deste site. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e não nos responsabilizamos por compras realizadas em outros sites.</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-32896aa elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="32896aa" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1c285d4 elementor-widget elementor-widget-html" data-id="1c285d4" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- START Widget WhastApp hospedagemwordpresspro -->
+<a href="https://api.whatsapp.com/send?phone=5511910235632&text=Ol%C3%A1!%20Eu%20venho%20da%20p%C3%A1gina%20de%20vendas%20do%20App%20da%20TVL,%20e%20gostaria%20de%20adquirir%20o%20meu,%20voc%C3%AA%20pode%20me%20ajudar?" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+<img decoding="async" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMjYxOSA1MDYgMTIwIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzI3ZDA0NTsKICAgICAgfQoKICAgICAgLmNscy0yLCAuY2xzLTUgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiBub25lOwogICAgICB9CiAgICA8L3N0eWxlPjwvZGVmcz48ZyBkYXRhLW5hbWU9Ikdyb3VwIDM2IiBpZD0iR3JvdXBfMzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzMDAgNzMpIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjYwIiBjeT0iNjAiIGRhdGEtbmFtZT0iRWxsaXBzZSAxOCIgaWQ9IkVsbGlwc2VfMTgiIHI9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTkgNDMzKSIvPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzUiIGlkPSJHcm91cF8zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0IDM4NikiPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzQiIGlkPSJHcm91cF8zNCI+PGcgY2xhc3M9ImNscy0yIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTkiIGlkPSJFbGxpcHNlXzE5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NCA3NSkiPjxjaXJjbGUgY2xhc3M9ImNscy00IiBjeD0iMzEuNSIgY3k9IjMxLjUiIHI9IjMxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNSIgY3g9IjMxLjUiIGN5PSIzMS41IiByPSIyOSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDI0LDE5MWwtNC42LDE2LjMsMTYuOS00LjcuOS01LjItMTEsMy41LDIuOS0xMC41WiIgZGF0YS1uYW1lPSJQYXRoIDEyNiIgaWQ9IlBhdGhfMTI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMyNSAtNjgpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI2Niw5MGMwLS4xLDMuNS0xMS43LDMuNS0xMS43bDguNCw3LjlaIiBkYXRhLW5hbWU9IlBhdGggMTI3IiBpZD0iUGF0aF8xMjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTY1IDQzKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDM5LjMsMTYwLjZhOS40LDkuNCwwLDAsMC0zLjksNi4xYy0uNSwzLjksMS45LDcuOSwxLjksNy45YTUwLjg3Niw1MC44NzYsMCwwLDAsOC42LDkuOCwzMC4xODEsMzAuMTgxLDAsMCwwLDkuNiw1LjEsMTEuMzc4LDExLjM3OCwwLDAsMCw2LjQuNiw5LjE2Nyw5LjE2NywwLDAsMCw0LjgtMy4yLDkuODUxLDkuODUxLDAsMCwwLC42LTIuMiw1Ljg2OCw1Ljg2OCwwLDAsMCwwLTJjLS4xLS43LTcuMy00LTgtMy44cy0xLjMsMS41LTIuMSwyLjYtMS4xLDEuNi0xLjksMS42LTQuMy0xLjQtNy42LTQuNGExNS44NzUsMTUuODc1LDAsMCwxLTQuMy02cy42LS43LDEuNC0xLjhhNS42NjQsNS42NjQsMCwwLDAsMS4zLTIuNGMwLS41LTIuOC03LjYtMy41LTcuOUExMS44NTIsMTEuODUyLDAsMCwwLDE0MzkuMywxNjAuNloiIGRhdGEtbmFtZT0iUGF0aCAxMjgiIGlkPSJQYXRoXzEyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMjYuMzMyIC02OC40NjcpIi8+PC9nPjwvZz48L3N2Zz4=" alt="" width="60px">
+</a>
+<span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+<div id="msg1" style="right: 90px; visibility: hidden; background: #fff;color: #000;position: fixed;width: 100px;bottom: 55px;font-size: 12px;line-height: 13px;padding: 3px; border-radius: 10px; border:1px solid #e2e2e2; box-shadow: 2px 2px 3px #999;z-index:100; ">Olá, Posso Ajudar?</div>
+<script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+<!-- END Widget WhastApp -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-77b24a9 elementor-widget elementor-widget-text-editor" data-id="77b24a9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Somos uma empresa de E-commerce. Todos os direitos reservados a TVL TVBOX | Importante: Esta página não tem qualquer vínculo com o Facebook S/A e suas empresas, apenas usamos a plataforma para promover os nossos produtos. Ao sair da plataforma toda responsabilidade sobre produtos vendidos e ofertados é de inteira responsabilidade da nossa empresa, bem como se houver quaisquer eventualidades legais. Declaramos que o Facebook S/A não tem qualquer vínculo de associação em processos cíveis ou criminais. Nosso email de suporte é: suporte24h@tvleduc.com.br. Não compre produtos piratas, não vendemos em marketplaces como: Mercado Livre, Shopee, Aliexpress, Facebook, Olx etc.Não damos suporte a produtos comprados nestes canais.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-229316c elementor-widget elementor-widget-text-editor" data-id="229316c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><em>CNPJ 27.217.177/0001-09</em></p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		<link rel='stylesheet' id='e-animations-css' href='https://tvl.app.br/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.17.3' media='all' />
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/tvl.app.br","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src="https://tvl.app.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0" id="hello-theme-frontend-js"></script>
+<script id="happy-elementor-addons-js-extra">
+var HappyLocalize = {"ajax_url":"https:\/\/tvl.app.br\/wp-admin\/admin-ajax.php","nonce":"7d6092e153","pdf_js_lib":"https:\/\/tvl.app.br\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+</script>
+<script src="https://tvl.app.br/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.10.1" id="happy-elementor-addons-js"></script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.17.1" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.17.3" id="elementor-webpack-runtime-js"></script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.17.3" id="elementor-frontend-modules-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/tvl.app.br\/wp-admin\/admin-ajax.php","nonce":"2dc2fcf499","urls":{"assets":"https:\/\/tvl.app.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/tvl.app.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/tvl.app.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.17.1" id="elementor-pro-frontend-js"></script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://tvl.app.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.17.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"nested-elements":true,"e_global_styleguide":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/tvl.app.br\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":9,"title":"Aplicativo%20TVL","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.17.3" id="elementor-frontend-js"></script>
+<script src="https://tvl.app.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.17.1" id="pro-elements-handlers-js"></script>
+	</body><iframe width="1" height="0"
+src="https://ev.braip.com/ref?pl=plao1nxg&ck=chevxreo&af=afilx523v6&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html></script>
+</body><iframe width="1" height="0"
+src="https://app.monetizze.com.br/r/AMN24229367?u=c&pl=XV280988&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html></script>
+</body><iframe width="1" height="0"
+src="https://app.monetizze.com.br/r/AKL22768271?u=c&pl=ZC212532&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html></script>
+</body><iframe width="1" height="0"
+src="https://ev.braip.com/ref?pv=pro3r6do&af=afio88pl57&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html></script>
+</body><iframe width="1" height="0"
+src="https://ev.braip.com/ref?pv=proyw739&af=afidnjdl9l&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html></script>
+</body><iframe width="1" height="0"
+src="https://app.monetizze.com.br/r/AQV24099300?u=c&pl=KR281147&src=YOUT.DE.OLHO.NA.FAMA.COOKIEMAR"></iframe>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1714214665 -->
